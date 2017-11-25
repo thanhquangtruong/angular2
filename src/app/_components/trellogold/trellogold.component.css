@@ -1,0 +1,99 @@
+img#img-trello-gold{
+    width: 30%;
+    margin-top: 100px;
+    height: 30%;
+    max-height: 100%;
+    max-width: 100%;
+}
+p#txt-trello-gold{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p#txt-trello-gold-1{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-update{
+    height: 45px;
+    width: 160px;
+    margin-left: 20px;
+    background-color: #61bd4f;
+    font-size: 18px;
+    text-align: center;
+}
+p#txt-trello-gold-2{
+     text-align: center;
+     font-size: 22px;
+     margin-left: 250px;
+     margin-right: 250px;
+ }
+p#txt-trello-gold-2-1{
+    text-align: center;
+    font-size: 22px;
+    margin-left: 370px;
+    margin-right: 370px;
+}
+p#txt-trello-gold-3{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 160px;
+}
+.btn-power-trello{
+    height: 45px;
+    width: 260px;
+    margin-left: 20px;
+    background-color: #0c3953;
+    font-size: 18px;
+    text-align: center;
+}
+p#txt-trello-gold-4{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 130px;
+}
+p#txt-trello-gold-4-1{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 130px;
+}
+p#trello-text-sticket{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 60px;
+    margin-right: 300px;
+}
+p#trelo-gold-txt2{
+    font-size: 20px;
+    margin-top: 100px;
+    margin-right: 10px;
+    text-align: left;
+}
+p#txt-trello-gold{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p#txt-free{
+    font-size: 26px;
+    font-weight: bold;
+}
+p#txt-free-1{
+    font-size: 26px;
+    font-weight: bold;
+}
+p#txt-free-3{
+    font-size: 16px;
+}
+p#txt-free-4{
+    font-size: 16px;
+}

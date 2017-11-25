@@ -1,0 +1,87 @@
+<!--<div class="container">
+    <div class="col-sm-6 row" style="margin: 16px auto">
+        <h1>Login</h1>
+        <div class="col-sm-12 form-group">
+            <label>Username</label>
+            <input class="form-control" type="text" [(ngModel)]="username"/>
+        </div>
+        <div class="col-sm-12 form-group">
+            <label>Password</label>
+            <input class="form-control" type="password" [(ngModel)]="password"/>
+        </div>
+        <div class="col-sm-12 form-group">
+            <input type="checkbox"> Ghi nho dang nhap
+        </div>
+        <div class="col-sm-12">
+            <a href="#"> Quen mat khau ?</a>
+        </div>
+        <div class="col-sm-12">
+            <button class="btn btn-primary pull-right" (click)="login()" type="submit">Login</button>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div class="alignCenter">
+                <small>Nếu bạn chưa có tài khoản, hãy tạo cho mình một tài khoản.</small>
+            </div>
+            <div class="alignCenter">
+                <a href="#" class="btn signup">Đăng ký tải khoản mới</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div style="background-color: #e0e0e0">
+    <div class="container ">
+        <form class="frm_Login">
+            <h2 class ="alignCenter" >Đăng nhập tài khoản</h2>
+            <br>
+            <div class="form-group">
+                <label>Tài khoản</label>
+                <input  type ="text" class="form-control" [(ngModel)]="username"/>
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu</label>
+                <input  type ="password" class="form-control" [(ngModel)]="password"/>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <div class="checkbox">
+                        <a href="ForgotPassword.html">Quên mật khẩu?</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Ghi nhớ mật khẩu</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="alignCenter">
+                    <small>-----------Hoặc đăng nhập nhanh với-----------</small>
+                    <br><br>
+                </div>
+                <div class="col-sm-6">
+                    <button  class="facebook"><span>Facebook</span></button>
+                </div>
+                <div class="col-sm-6">
+                    <button class="google"><span>Gmail</span></button>
+                </div>
+            </div>
+            <br><br>
+            <div class="alignCenter">
+                <small>Nếu bạn chưa có tài khoản, hãy tạo cho mình một tài khoản.</small>
+            </div>
+            <br>
+            <div class="alignCenter">
+                <a href="/signup" class="btn signup">Đăng ký tải khoản mới</a>
+            </div>
+            <br>
+            <div class="button" style="margin-left: 100px;">
+                <input type="hidden"  value ="login" name="command" >
+                <input type="submit" class="btn btn-primary" value="Đăng nhập" (click)="login()">
+                <a href="" class="btn btn-warning">Trở về</a>
+            </div>
+
+        </form>
+    </div>
+</div>

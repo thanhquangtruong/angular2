@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-sm-6 row" style="margin: 16px auto">
+        <h1>Login</h1>
+
+        <div class="col-sm-12 form-group">
+            <label>Username</label>
+            <input class="form-control" type="text" [(ngModel)]="username"/>
+        </div>
+        <div class="col-sm-12 form-group">
+            <label>Email</label>
+            <input class="form-control" type="email" [(ngModel)]="email"/>
+        </div>
+        <div class="col-sm-12 form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" [(ngModel)]="name"/>
+        </div>
+        <div class="col-sm-12 form-group">
+            <label>Password</label>
+            <input class="form-control" type="password" [(ngModel)]="password"/>
+        </div>
+        <div class="col-sm-12">
+            <button class="btn btn-primary pull-right" (click)="register()" type="submit">Submit</button>
+        </div>
+    </div>
+</div>

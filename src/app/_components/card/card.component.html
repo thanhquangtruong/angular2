@@ -1,0 +1,280 @@
+<div class="body-card" style="height: auto; background-color: #EDEFF0;"><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="padding-bottom:50px;">
+                <div class="circle-resume">
+                    <p>T</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <label style="margin-left: 40px;margin-top: 40px;" id="show-name">Thanhquang10</label><span>@thanhquang101</span><br>
+                <button type="button" class="btn" style="margin-top: 10px; margin-left: 40px; font-size: 18px;" onclick="showResume();" id="btn-showresume"><span class="glyphicon-pencil">Chỉnh sửa lý lịch</span></button>
+                <div style="display:none;width: 300px;" id="ChangeResume" class="animate-bottom">
+                    <br>
+                    <div class="form-group">
+                    <label id="addemail-12">Tên đầy đủ</label>
+                    <input name="name" type ="text" class="form-control" value="thanhquangtruong" style="background-color: #D6DADC">
+                </div>
+                <div class="form-group">
+                    <label id="addemail-13">Tên người dùng</label>
+                    <input name="name" type ="text" class="form-control" value="thanhquangtruong101" style="background-color: #D6DADC">
+                </div>
+                <div class="form-group">
+                    <label id="addemail-14">Chữ cái viết tắt</label>
+                    <input name="name" type ="text" class="form-control" value="T"style="background-color: #D6DADC">
+                </div>
+                <div class="form-group">
+                    <label id="addemail">Lý lịch (không bắt buộc)</label>
+                    <textarea class="form-control" rows="3" id="resume" style="background-color: #D6DADC"></textarea>
+                </div>
+                <button class="btn btn-primary" type="button" style="margin-bottom:20px">Thay đổi</button>
+                <button class="btn btn-warning" type="button" style="margin-bottom:20px; margin-left:10px;">Hủy</button><br>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div id="exTab2" class="container">
+    <ul class="nav nav-tabs"  style="margin-left: 400px;font-size: 18px; font-weight: bold;margin-right: 200px; ">
+        <li class="active"><a  href="#1" data-toggle="tab">Lý lịch</a></li>
+        <li><a href="#2" data-toggle="tab">Thẻ</a></li>
+        <li><a href="#3" data-toggle="tab">Cài đặt</a></li>
+        <li><a href="#4" data-toggle="tab">Trello Gold</a></li>
+    </ul>
+    <div class="tab-content ">
+        <div class="tab-pane active" id="1">
+            <label class="glyphicon glyphicon-tasks" id="run-card"> Hoạt động</label>
+            <hr>
+            <div class="list-actions-card" style="height: 80px; background-color: #D6DADC">
+                <p class="empty-list" style="margin-top: 30px;">Không có hoạt động nào trong 30 ngày qua</p>
+            </div>
+            <a class="load-action-card" href="#"><span class="text">Tải thêm hoạt động</span></a>
+        </div>
+        <div class="tab-pane" id="2"><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="" class="sort-card-tab2" id="sort-card-1"> Sắp xếp theo <strong>bảng</strong></a>
+                    <div id="Sort-Card" style="display:none;">
+                        <a href="#" class="big-mail-card"><strong>Lọc theo bảng</strong></a>
+                        <a href="#" class="big-mail-card"><strong>Sắp xếp theo ngày hết hạn</strong></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <a href="#" class="sort-card-tab2" id="show-card-2"> Hiển thị các thẻ trong <strong>tháng</strong> trước</a>
+                    <div id="Show-card" style="display:none;">
+                        <a href="#" class="big-mail-card"><strong>Hiển thị các thẻ hoạt động trong ngày gần nhất.</strong></a>
+                        <a href="#" class="big-mail-card"><strong>Hiển thị các thẻ hoạt động trong tuần trước.</strong></a>
+                        <a href="#" class="big-mail-card"><strong>Hiển thị các thẻ hoạt động trong tháng trước.</strong></a>
+                        <a href="#" class="big-mail-card"><strong>Hiển thị các thẻ hoạt động trong năm trước .</strong></a>
+                        <a href="#" class="big-mail-card"><strong>Hiển thị tất cả các thẻ .</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-actions-card" style="height: 200px; background-color: #D6DADC; margin-top: 30px;">
+                <p class="empty-list" style="margin-top: 30px;">Không nhìn thấy bất kỳ thẻ nào. Bạn phải được thêm vào thẻ để nhìn thấy chúng.</p>
+            </div>
+        </div>
+        <div class="tab-pane" id="3">
+            <div class="popover-demo">
+                <p id="title-card-2">Chi tiết tài khoản</p>
+                <hr>
+                <div>
+                    <a class="big-link-card" href="#" id="change-resume-2"><span class="text">Thay đổi Tên, Chữ ký hoặc Lý lịch...</span></a>
+                    <div id="Change-Resume" style="display:none;">
+                        <div class="form-group">
+                            <label id="addemail-2">Tên đầy đủ</label>
+                            <input name="name" type ="text" class="form-control" value="thanhquangtruong10">
+                        </div>
+                        <div class="form-group">
+                            <label id="addemail-1">Chữ cái viết tắt</label>
+                            <input name="pass-new" type ="text" class="form-control"  value="T">
+                        </div>
+                        <div class="form-group">
+                            <label id="addemail-3">Tên người dùng</label>
+                            <input name="pass-confirm" type ="text" class="form-control"  value="thanhquangtruong01">
+                        </div>
+                        <div class="form-group">
+                            <label id="addemail-4">Lý lịch</label>
+                            <textarea class="form-control" rows="3" id="comment"></textarea>
+                        </div>
+                        <button class="btn btn-default btn-add-email-card" >Lưu</button><hr>
+                        <p>Chức danh của bạn sẽ được đặt vào hình đại diện nếu bạn chưa đặt nó. Tên người dùng yêu cầu tối thiểu 3 ký tự, chỉ bao gồm chữ và số.</p>
+                    </div>
+                </div>
+                <a class="big-link-card" href="#"><span class="text">Thay đổi ảnh đại diện...</span></a>
+                <div>
+                    <a class="big-link-card" href="#" id="change-password-1"><span class="text">Thay đổi mật khẩu...</span></a>
+                    <div id="Change-Password" style="display:none;">
+                        <div class="form-group">
+                            <label id="addemail-6">Mật khẩu hiện tại</label>
+                            <input name="pass-current" type ="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label id="addemail-7">Mật khẩu mới</label>
+                            <input name="pass-new" type ="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label id="addemail-8">Mật khẩu mới (nhập lại) </label>
+                            <input name="pass-confirm" type ="password" class="form-control">
+                        </div>
+                        <button class="btn btn-default btn-add-email-card">Lưu</button>
+                    </div>
+                </div>
+                <div class="change-email">
+                    <a class="big-link-card" href="#" id="change-email-1"><span class="text">Thay đổi Email...</span></a>
+                    <div id="Change-Email" style="display:none;">
+                        <div class="form-group">
+                            <label id="addemail-9">Email hiện tại</label>
+                            <input name="email" type ="email" class="form-control" disabled="true" value="phamanhthao1998@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label id="addemail-10">Email mới</label>
+                            <input name="email" type ="email" class="form-control">
+                        </div>
+                        <button class="btn btn-default btn-add-email-card" type="">Thay đổi Email</button>
+                    </div>
+                </div>
+                <div class="change-languages">
+                    <a class="big-link-card" href="#" id="change-language-1"><span class="text">Thay đổi ngôn ngữ...</span></a>
+                    <div id="Change-Language" style="display:none;">
+                        <a id="language-1" href="">Čeština</a><br>
+                        <a id="language-2" href="">Čeština</a><br>
+                        <a id="language-3" href="">Deutsch</a><br>
+                        <a id="language-4" href="">English (AU)</a><br>
+                        <a id="language-5" href="">English (UK)</a><br>
+                        <a id="language-6" href="">English (US)</a><br>
+                        <a id="language-7" href="">Español</a><br>
+                        <a id="language-8" href="">Français</a><br>
+                        <a id="language-9" href="">Français (Canada)</a><br>
+                        <a id="language-10" href="">Italiano</a><br>
+                        <a id="language-11" href="">Magyar</a><br>
+                        <a id="language-12" href="">Nederlands</a><br>
+                        <a id="language-13" href="">Norsk (bokmål)</a><br>
+                        <a id="language-14" href="">Polski</a><br>
+                        <a id="language-15" href="">Português (Brasil)</a><br>
+                        <a id="language-16" href="">Suomi</a><br>
+                        <a id="language-17" href="">Svenska</a><br>
+                        <a id="language-18" href="">Tiếng Việt</a><br>
+                        <a id="language-19" href="">Türkçe</a><br>
+                        <a id="language-20" href="">Русский</a><br>
+                        <a id="language-21" href="">Українська</a><br>
+                        <a id="language-22" href="">ภาษาไทย</a><br>
+                        <a id="language-23" href="">中文 (简体)</a><br>
+                        <a id="language-24" href="">中文 (繁體)</a><br>
+                        <a id="language-25" href="">日本語</a>
+                    </div>
+                </div>
+            </div>
+            <div class="chungchi">
+                <p id="title-card-4"> Chứng chỉ</p>
+                <hr>
+                <div class="mail-card"><br>
+                    <p>Phamanhthao2998@gmail.com</p><br>
+                    <p>Email chính</p><br>
+                    <p>Đã thêm ngày: Thứ 3 tuần vừa rồi</p>
+                </div>
+                <div>
+                    <button class="btn btn-default" type="change" style="background-color: #D6DADC;margin-left: 40px; margin-top: 10px;margin-bottom: 20px; font-size: 15px; width: 200px;height: 35px;" id="add-email">Thêm địa chỉ Email mới</button>
+                    <div id="addemaill" style="display:none;">
+                        <div class="form-group">
+                            <label id="addemail-5">Địa chỉ Email mới</label>
+                            <input name="email" type ="email" class="form-control" >
+                        </div>
+                        <button class="btn btn-default btn-add-email-card" type="button">Gửi Email xác minh</button>
+                        <hr>
+                        <p>Chúng tôi sẽ gửi một email tới địa chỉ mà bạn nhập. Nhấn vào đường dẫn bên trong email để xác nhận địa chỉ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thongbao">
+                <p id="title-card-10">Thông báo</p>
+                <hr>
+                <div>
+                    <a class="big-link-card" href="#" id="a-email">Thay đổi tần suất thông báo qua Email...</a>
+                    <div id="divEmail" style="display:none;">
+                        <a class="big-mail-card" href="#"><span class="text"><strong>Không bao giờ</strong><br>Đừng gửi những Email</span></a>
+                        <a class="big-mail-card" href="#"><span class="text"><strong>Định kỳ</strong><br>Gửi mỗi Email một lần mỗi giờ.</span></a>
+                        <a class="big-mail-card" href="#"><span class="text"><strong>Ngay lập tức</strong><br>Gửi những Email sớm nhất có thể</span></a>
+                    </div>
+                </div>
+                <a class="big-link-card" href="#"><span class="text">Cho phép thông báp trên Desktop</span></a>
+            </div>
+            <div class="access">
+                <p id="title-card">Quyền truy cập</p>
+                <hr>
+                <a class="big-link-card js-change-name-and-bio" href="#"><span class="text">Bật chế độ hỗ trợ người mù màu</span></a>
+            </div>
+            <div class="phienlamviec">
+                <p id="title-card0">Phiên làm việc</p>
+                <hr>
+                <p><strong>113.172.129.203</strong></p>
+                <p>Lần sử dụng cuối cùng: Ít hơn một giờ trước (phiên hiện tại)</p>
+                <p><strong>14.169.67.177</strong></p>
+                <p>Lần sử dụng cuối cùng: 6 giờ trước</p>
+                <p><strong>113.172.129.203</strong></p>
+                <p>Lần sử dụng cuối cùng: Hôm qua lúc 23:30</p>
+                <p><strong>14.169.67.177</strong></p>
+                <p>Lần sử dụng cuối cùng: Hôm qua lúc 19:47</p>
+                <p><strong>14.169.67.177</strong></p>
+                <p>Lần sử dụng cuối cùng: Hôm qua lúc 11:58</p>
+                <p><strong>14.169.36.146</strong></p>
+                <p>Lần sử dụng cuối cùng: thứ ba tuần rồi lúc 16:43</p>
+                <p><strong>14.169.36.146</strong></p>
+                <p>Lần sử dụng cuối cùng: thứ ba tuần rồi lúc 15:32</p><br>
+                <button class="btn btn-default" type="change" style="background-color: #D6DADC;margin-left: 40px; margin-top: 20px; font-size: 15px; width: 200px;height: 35px;">Đăng xuất các phiên khác</button>
+            </div>
+            <h4>Xác thực hai bước</h4>
+            <hr>
+            <a class="big-link-card" href="#"><span class="text">Cấu hình bảo mất hai lớp</span></a><br>
+            <div>
+                <a class="btn btn-default" id="a-popover">Xóa vĩnh viễn tài khoản của bạn!</a>
+                <div id="divContentHTML" style="display:none;">
+                    <p>Việc tài khoản thành viên <strong>(thanhquang101)</strong> của bạn thì không thể hoàn tác.</p>
+                    <p>Bạn sẽ mất truy cập tới các bảng và nhóm của bạn</p>
+                    <p>Bạn có muốn chúng tôi gởi email đến <strong>phamanhthao1998@gmail.com</strong> và có chứa một đường dẫn để xoá tài khoản của bạn?</p>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-send">Gửi email</button>
+                        </div>
+                        <div class="col-md-2" style="margin-left: 60px;">
+                            <button class="btn btn-del" id="btnExit">Đừng bận tâm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="4">
+            <div style="text-align: center; margin-top: 40px;">
+                <p id="title-card-1">Nhận thêm tính năng thú vị và hấp dẫn.</p>
+                <p>Trello Gold bao gồm tất cả các tính năng phổ thông của Trello cộng thêm...</p>
+                <div class="row" style="margin-top: -80px;">
+                    <div class="col-md-4">
+                        <img id="img-business-2-2" src="https://a.trellocdn.com/images/ce5f8f256e6f3ccf9c53d42dc68fb414/business-class-feature-integration.png" alt="">
+                        <div class="txt-business-4">
+                            <p id="title-card-6">Mở rộng hiệu suất của bạn</p>
+                            <p>Tăng cường các bảng của bạn bằng các tính năng và tích hợp bổ sung. Bật lên đến ba Phần mở rộng ở mỗi bảng.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img id="img-business-2-1" src="https://a.trellocdn.com/images/0f99b85b579fc74b3199880b3ecbd504/business-class-feature-roadmap.png" alt="">
+                        <div class="txt-card">
+                            <p id="title-card-3">Các tập đính kèm khổng lồ</p>
+                            <p>Đính kèm tập 10 MB không đủ lớn? Tải lên tập tin lên đến 250 MB.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img id="img-business-2" src="https://a.trellocdn.com/images/cfae0699077aa768a80995ddd051271a/business-class-feature-overview.png" alt="">
+                        <div class="txt-business-4">
+                            <p id="title-card-5">Trello theo cách của bạn</p>
+                            <p>Tạo các bảng theo cách bạn thích với hình nền tuỳ chọn, nhãn dán vui nhộn, và những biểu tượng cảm xúc tuỳ chỉnh.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="/trello-gold" id="link-trello-gold">Xem toàn bộ các lợi ích.</a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

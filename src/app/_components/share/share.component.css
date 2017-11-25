@@ -1,0 +1,120 @@
+p#txt-share-trello{
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+p#txt-share-trello-2{
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+p#txt-share-trello-3{
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+p#txt-share-trello-4{
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+p#txt-share-trello-1{
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.btn-trello-gold{
+    border: 1px solid #5e98ba;
+    background-color: white;
+    color: #5e98ba;
+    width: 280px;
+    text-align: center;
+    margin-left: 540px;
+    font-size: 18px;
+}
+.btn-trello-gold-1{
+    border: 1px solid #5e98ba;
+    background-color: white;
+    color: #5e98ba;
+    width: 280px;
+    text-align: center;
+    margin-left: 540px;
+    font-size: 18px;
+}
+.progress{
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 150px;
+    background-color: #d9d9d9;
+}
+p#txt-trello-gold-1{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h6{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    background: #d9d9d9;
+    text-align: center;
+    padding: 8px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+p#trello-share{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+}
+p#trello-share-2{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+}
+p#trello-share-3{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+}
+p#trello-share-4{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+}
+p#trello-share-1{
+    text-align: left;
+    font-size: 18px;
+}
+p#taco{
+    font-size: 28px;
+    color: white;
+    margin-left: -80px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+}

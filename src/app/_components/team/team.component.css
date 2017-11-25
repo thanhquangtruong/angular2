@@ -1,0 +1,126 @@
+p#setting-card{
+    font-size: 16px;
+}
+p#setting-card-item{
+     font-size: 14px;
+ }
+p#setting-card-member{
+    font-size: 16px;
+    text-align: center;
+}
+.list-member-2{
+    margin-left: -50px;
+    width: 250px;
+}
+p#setting-lock{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+p#setting-lock-item{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.create-table-new{
+    height: 100px;
+    text-align: center;
+    color: black;
+    padding-top: 35px;
+}
+.list-member-4{
+    margin-left: -170px;
+    width: 250px;
+}
+.member-circle {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #D6DADC;
+    text-align: center;
+    padding: 7px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+p#card-user-txt{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+p#card-user-txt-name{
+    margin-top: -10px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+p#title-card-3{
+    font-size: 18px;
+    font-weight: bold;
+}
+p#title-card-6{
+    font-size: 18px;
+    font-weight: bold;
+}
+p#title-card-4{
+    font-size: 18px;
+    font-weight: bold;
+}
+p#title-card-8{
+    font-size: 18px;
+    font-weight: bold;
+}
+p#title-card-7{
+    font-size: 18px;
+    font-weight: bold;
+}
+p#title-card-5{
+    font-size: 18px;
+    font-weight: bold;
+}
+hr#aaa{
+   border: 0.1mm dotted black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+hr#aaaa{
+    border: 0.1mm dotted black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+hr#aaaaa{
+    border: 0.1mm dotted black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+hr#aaaaaa{
+    border: 0.1mm dotted black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+img#img-business-2{
+    width: 30%;
+    margin-top: 100px;
+    height: 30%;
+    max-height: 100%;
+    max-width: 100%;
+}
+img#img-business-4{
+    width: 30%;
+    margin-top: 100px;
+    height: 30%;
+    max-height: 100%;
+    max-width: 100%;
+}
+img#img-business-3{
+    width: 30%;
+    margin-top: 100px;
+    height: 30%;
+    max-height: 100%;
+    max-width: 100%;
+}

@@ -1,0 +1,1176 @@
+.popover{  width:800px;
+}
+.popover-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+}
+/* Trang index */
+img#img_logo_index{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    height: 80px;
+}
+p#txt_index_1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    text-align: center;
+    font-family:jaf-facitweb, Helvetica Neue,Arial,sans-serif;
+}
+p#txt_index_2{
+    font-size: 22px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+.btn-signup{
+    width: 280px;
+    background-color: #519839;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+}
+.body-index_2{
+    background-color: #0079bf;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+p#txt_index_3{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+p#txt_index_4{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-right: 300px; 
+    color: white;
+    text-align: center;
+}
+img#img_index_2{
+    background-size: cover;
+    max-width: 100%;
+    margin-left: 30px;
+    padding-left: 100px;
+    max-height: 100% ;
+    width:90%;
+    height: 90%;
+    margin-bottom: 40px;
+}
+p#txt_index_5{
+    font-size: 20px;
+    margin-left: 310px;
+    margin-right: 310px; 
+    color: black;
+    text-align: center;
+}
+.class-tour{
+    height: 45px;
+    width: 360px;
+    margin-left: 20px;
+    background-color: #D6DADC;
+    font-size: 22px;
+    text-align: center;
+}
+p#txt_index_6{
+    font-size: 20px;
+    margin-top: 120px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+img#img-app{
+    height: 54px;max-height: 100%; max-width: 100%;
+}
+p#txt_index_7{
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+p#txt_index_8{
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+p#txt_index_9{
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 50px;
+    color: white;
+    margin-right: 120px;
+}
+
+/* Trang Platfroms*/
+p#title_platforms{
+	font-size: 40px;
+	text-align: center;
+	margin-top: 90px;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-bottom: 70px;
+	font-weight: bold;
+}
+p#platforms-img-tittle{
+	font-size: 30px;
+	margin-left: 0px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+img#icon-mobile-platforms{
+	height: 48px;
+	width: 138px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	max-width: 100%;
+	max-height: 100%;
+}
+img#icon-desktop-platforms{
+	height: 48px;
+	width: 138px;
+	margin-bottom: 15px;
+	margin-left: 65px;
+	max-width: 100%;
+	max-height: 100%;
+}
+p#platforms_title-browser{
+	font-size: 28px;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 70px;
+	font-weight: bold;
+}
+.btn-download_platforms{
+	height: 45px;
+	width: 150px;
+	background-color: #e2e4e6;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+p#title-browser-2-platforms{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+}
+.btn-view-trello-platforms{
+	height: 45px;
+	width: 200px;
+	color: white;
+	margin-left: 20px;
+	background-color: #5aac44;
+	font-size: 22px;
+	text-align: center;
+}
+
+/* trang pricing */
+p#txt-pricing{
+	font-size: 19px;
+	text-align: center;
+}
+li#pricing{
+	margin-right: 20px;
+	margin-left: 20px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	text-align: left;
+}
+.pricing-content-1{
+background-color: #298fca;height: 400px;border: 0.5px solid #D6DADC;
+text-align: center;
+ color: white;
+}
+.pricing-content-2{
+background-color: #42548e;height: 400px;border: 0.5px solid #D6DADC;
+text-align: center;
+ color: white;
+}
+.pricing-content-3{
+background-color: #36405f;height: 400px;border: 0.5px solid #D6DADC;
+text-align: center;
+ color: white;
+}
+
+/* trang business class*/
+img#img-business{
+	width: 30%;
+	margin-top: 100px;
+	height: 30%;
+	max-height: 100%;
+	max-width: 100%;
+}
+p#txt-business-1{
+	font-size: 32px;
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.image_index_business{
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+p#txt-business-2{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+	margin-left: 280px;
+	margin-right: 280px;
+	margin-bottom: 10px;
+}
+p#txt-business-3{
+	font-size: 22px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+p#txt-business-4{
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+p#txt-business-6{
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+p#txt-business-5{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 180px;
+	margin-bottom: 30px;
+}
+p#txt-business{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin-left: 280px;
+	margin-right: 280px;
+	margin-bottom: 30px;
+}
+img#img-business-2{
+	width: 60%;
+	margin-top: 10px;
+	height: 60%;
+	max-height: 100%;
+	max-width: 100%;
+}
+img#img-business-3{
+	width: 100%;
+	margin-top: 10px;
+	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+}
+img#img-mail-business{
+	max-width: 100%;
+	max-height: 100%;
+	height: 30%;
+	width: 30%;
+	margin-left: 250px;
+}
+.btn-upgrade{
+	height: 45px;
+	width: 260px;
+	color: white;
+	margin-left: 20px;
+	background-color: #61bd4f;
+	font-size: 22px;
+	text-align: center;
+}
+p#txt-business-6{
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+p#txt-business-7{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin-top: 60px;
+	margin-left: 360px;
+	margin-right: 360px;
+	margin-bottom: 30px;
+}
+.row-business{
+	margin-left: 290px;width: 80%;
+	max-height: 100%;
+	max-width: 100%;
+}
+.background-business{
+	 height: 600px;
+	 background-color:#42548e;
+}
+
+/* card*/
+.circle-resume{
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 40px;
+    background: #D6DADC;
+    text-align: center;
+    padding: 22px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    margin-top: 30px;
+    margin-left: 300px;
+}
+label#show-name{
+	font-size: 18px;
+}
+#exTab2 .tab-content {
+  padding : 5px 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#exTab2 h3 {
+  color : black;
+  padding : 5px 15px;
+}
+.list-actions-card {
+    border-style: dotted;
+    border: 1px dotted;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.load-action-card {
+    border-radius: 3px;
+    display: block;
+    margin-top: 30px;
+    padding: 11px;
+    position: relative;
+    font-size: 1pc;
+    line-height: 20px;
+}
+.big-mail-card {
+    border-radius: 3px;
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+}
+a.big-mail-card {
+    color: #444;
+}
+
+a.big-mail-card:hover{
+    background-color: #D6DADC;
+}
+label#run-card{
+	font-size: 20px;
+}
+.empty-list{
+	font-size: 16px;
+}
+.sort-card-tab2{
+	 border-radius: 3px;
+    display: block;
+    margin-top: 20px;
+    padding: 11px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: underline;
+}
+.sort-card-tab2:hover{
+	background-color: #D6DADC;
+}
+.big-link-card {
+    border-radius: 3px;
+    display: block;
+    margin: 6px 0 6px 40px;
+    padding: 11px;
+    position: relative;
+    font-size: 1pc;
+    line-height: 20px;
+}
+.big-link-card:hover{
+	background-color: #D6DADC;
+}
+label#addemail{
+	font-size: 16px;	
+}
+.btn-add-email-card{
+	background-color: #5AAC44;
+	color: white;
+	font-size: 16px;
+}
+a#language:hover{
+	background-color: #D6DADC;
+}
+p#title-card{
+    font-size: 18px;
+    font-weight: bold;
+}
+.mail-card{
+	font-size: 16px;
+	margin-left: 50px; 
+}
+h7{
+	font-size: 16px;
+}
+
+h6{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+}
+a#link-trello-gold{
+	font-size: 20px;
+}
+
+/* trello-gold */
+img#img-trello-gold{
+	width: 30%;
+	margin-top: 100px;
+	height: 30%;
+	max-height: 100%;
+	max-width: 100%;
+}
+p#txt-trello-gold{
+	font-size: 32px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.btn-update{
+	height: 45px;
+	width: 160px;
+	margin-left: 20px;
+	background-color: #61bd4f;
+	font-size: 18px;
+	text-align: center;
+}
+p#txt-trello-gold-2{
+	text-align: center;
+	font-size: 22px;
+	margin-left: 370px;
+	margin-right: 370px;
+}
+p#txt-trello-gold-3{
+    text-align: left;
+    font-size: 20px; 
+    color: white;
+    margin-left: 20px;
+    margin-top: 160px;
+}
+.btn-power-trello{
+	height: 45px;
+	width: 260px;
+	margin-left: 20px;
+	background-color: #0c3953;
+	font-size: 18px;
+	text-align: center;
+}
+p#txt-trello-gold-4{
+    text-align: left;
+    font-size: 20px; 
+    margin-left: 20px;
+    margin-top: 130px;
+}
+p#trello-text-sticket{
+    text-align: left;
+    font-size: 20px; 
+    margin-left: 300px;
+    margin-top: 60px;
+    margin-right: 300px;
+}
+p#trelo-gold-txt2{
+    font-size: 20px;
+    margin-top: 100px;
+    margin-right: 10px;
+    text-align: left;
+}
+p#txt-trello-gold{
+	font-size: 32px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+/*card user  */
+p#setting-card{
+	font-size: 16px;
+}
+p#setting-card-item{
+	font-size: 14px;
+}
+p#setting-card-member{
+	font-size: 16px;
+	text-align: center;
+}
+.list-member-2{
+	margin-left: -170px;
+	width: 250px;
+}
+p#setting-lock{
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 14px;
+	margin-top: 20px;
+	}
+p#setting-lock-item{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.create-table-new{
+	height: 100px;
+	text-align: center;
+	color: black;
+	padding-top: 35px;
+}
+.list-member-4{
+	margin-left: -170px;
+	width: 250px;
+}
+.member-circle {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #D6DADC;
+    text-align: center;
+    padding: 7px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+p#card-user-txt{
+	margin-top: 20px;
+	margin-left: 30px;
+	font-size: 14px;
+	font-weight: bold;
+}
+p#card-user-txt-name{
+	margin-top: -10px;
+	margin-left: 30px;
+	font-size: 14px;
+}
+/*guide-trello*/
+.navbar-inverse-1{
+	
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #026AA7; height: 55px;
+}
+.img-logo{
+	background: none;
+	width:100px;
+	 height:60px; 
+}
+p#guide-title{
+	font-size: 38px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+p#guide-description{
+	margin-right: 350px;
+	margin-left: 350px;
+	font-size: 26px;
+	color: white;
+	text-align: center;
+}
+p#guide-theme{
+	margin-right: 300px;
+	margin-left: 300px;
+	font-size: 20px;
+	color: black;
+	margin-top: 80px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+img#img-guide-item{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+img#img-guide-item{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+img#img-world{
+	height: 8%;
+	width: 8%;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+.row-guide{
+	margin-top: 10px;
+	margin-left: 240px;
+	max-height: 100%;
+	max-width: 100%;
+	margin-bottom: 60px;
+}
+img#webinar{
+	margin-top: 120px;max-height: 100%; max-width: 100%;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	margin-left: 200px;
+}
+p#guide-webinar{
+	margin-right: 100px;
+	margin-left: -100px;
+	font-size: 22px;
+	color: white;
+	margin-top: 120px;
+	text-align: left;
+}
+p#guide-table{
+	text-align: center; margin-left: 300px;
+	margin-right: 300px;
+	font-size: 20px;
+	margin-top: 70px;
+}
+.table-user{
+	float: left;
+	margin-left: 60px;
+	font-size: 16px;
+}
+.create-tb{
+	width: 300px;
+	height: 100px;
+	margin-left: 40px;
+	background-color: rgb(75, 191, 107);
+	color: white;
+	font-weight: bold;
+}
+.member-index-user{
+	padding-top: 10px;
+	margin-left: 50px;
+	width: 200px;
+}
+/*Share trello*/
+p#txt-share-trello{
+	text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.btn-trello-gold{
+    border: 1px solid #5e98ba;
+    background-color: white;
+    color: #5e98ba;
+    width: 280px;
+    text-align: center;
+    margin-left: 540px;
+    font-size: 18px;
+}
+.progress{
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 150px;
+    background-color: #d9d9d9;
+}
+h6{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    background: #d9d9d9;
+    text-align: center;
+    padding: 8px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+p#trello-share{
+    text-align: left;
+    font-size: 18px; 
+    margin-top: 5px;
+}
+p#trello-share-1{
+    text-align: left;
+    font-size: 18px; 
+}
+p#taco{
+    font-size: 28px;
+    color: white;
+    margin-left: -80px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+}
+/* Shortcut Phim tat*/
+.shortcuts{
+	margin-left: 300px;
+	margin-right: 300px;
+}
+.row-short{
+	margin-left: 400px;
+}
+p#txt-shortcut{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-left: -40px;
+}
+.shorts{
+	margin-top: 47px;
+}
+hr#hr{
+	background-color: #D6DADC;
+	height: 1px;
+}
+p#txt-short-item{
+	font-size: 16px;
+	font-weight: bold;
+
+}
+img#img-short-item{
+	float: right;
+	margin-top: -4px;
+}
+.short-item{
+	margin-left: 20px;
+}
+p#short-item{
+	margin-left: 10px;
+	text-align: left;
+}
+img#nhan{
+	margin-left: 80px;
+}
+.shorts-cuts{
+	margin-top: 47px;
+}
+/* table usser*/
+.private{
+	background-color: rgb(75, 191, 107);
+	margin-top: -17px;
+	margin-left: -120px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+.btn-table-welcom{
+	background-color: rgb(75, 191, 107);
+	margin-top: -15px;
+	margin-left: -100px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+.btn-access{
+	background-color: rgb(75, 191, 107);
+	margin-top: -15px;
+	margin-left: -170px;
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+}
+.big-card {
+    border-radius: 3px;
+    display: block;
+    padding: 4px;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-top: -5px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.big-card:hover{
+	background-color: #D6DADC;
+}
+.create-team{
+    font-size: 14px;
+}
+.sub-access {
+    border-radius: 3px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+}
+.sub-access {
+    color: #444;
+}
+
+.sub-access:hover {
+    background-color: #D6DADC;
+}
+.show-menu{
+	float: right;
+	text-align: right;
+	font-size: 16px;
+	margin-top: -5px;
+	background-color: rgb(75, 191, 107);
+	color: white;
+}
+.show-menu:hover{
+	background-color: rgba(0,0,0,.12);
+}
+.show-menu-card{
+	margin-top: 10px;width: 500px;float: right; margin-right: -70px;
+	background-color: #EDEFF0;
+}
+p#menu{
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+.avatar-table-user {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    background: #D6DADC;
+    text-align: center;
+    padding: 10px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin-left:10px;  	
+}
+.btn-adduser{
+	height: 35px;
+	width: 450px;
+	text-align: left;
+	margin-left: 20px;
+}
+hr#a{
+	margin-top: -5px;
+}
+.btn-menu-item{
+	height: 35px;
+	width: 450px;
+	background-color: #EDEFF0;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: left;
+	margin-left: 20px;
+	border: #EDEFF0
+}
+.list-job-table{
+	border-style: solid;
+    border: 1px solid #E2E4E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 270px; 
+    height: auto;
+    margin-right:10px;
+    margin-left: 30px;
+    background-color: #E2E4E6;
+    margin-bottom: 20px;
+}
+p#job-title{
+	text-align: left;font-size: 14px;font-weight: bold; margin-left: 10px;
+}
+.job-option{
+	background-color: white; margin-left: 5px; margin-right: 5px;
+}
+.job-item{
+	background-color: white; margin-left: 5px; margin-right: 5px;
+	margin-top: 5px;
+}
+img#img-job-title{
+	width: 95%;
+	margin-left:2px;
+	margin-bottom: 8px;
+	height: 100%;
+}
+button#btn-modal{
+	text-align: left;
+	background-color: white;
+	border: 1px solid white;
+}
+img#image-modal{
+	height: 30%;
+	width: 30%;
+	margin-left: 300px;
+	text-align: center;
+}
+p#title-modal-1{
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+p#tiltle-modal-2{
+	color: black;
+	margin-left: 40px;
+}
+img#url-daidien{
+	height: 100%;
+	width: 100%;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+p#name-img{
+	text-align: left ;
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 10px;
+}
+p#time-upload{
+	margin-left: 10px;
+}p#tiltle-modal-3{
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 17px;
+}
+.btn-modal{
+	width: 200px;
+	height: 35px;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 40px;
+}
+abel#txt-welcom{
+	font-size: 12px;
+	font-weight: bold;}
+a#txt-welcom{
+	font-size: 14px;
+	color: black;
+	font-weight: bold;}
+label#txt-welcom:hover{
+	background-color: blue;
+}
+
+/* tour*/
+p#txt_tour_1{
+    font-size: 34px;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 30px;
+    text-align: center;
+    font-family:jaf-facitweb, Helvetica Neue,Arial,sans-serif;
+}
+p#txt_tour_2{
+    font-size: 22px;
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+p#txt-tour-3{
+    font-size: 21px;
+    margin-left: 80px;
+    margin-right: 120px; 
+    text-align: center;
+    margin-top: 100px;
+}
+p#txt-tour-4{
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 60px;
+    margin-top: 100px;
+}
+p#txt-tour-5{
+    font-size: 20px;
+    margin-left: 80px;
+    color:  white;
+    margin-right: 100px;
+    margin-top: 200px;
+}
+.tour-1{
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.tour-2{
+    background-color: #0079bf;
+    margin-top: 40px;
+}
+p#txt-tour-6{
+    margin-top: 100px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 100px; 
+    color: black;
+    text-align: center;
+}
+p#txt-tour-7{
+    margin-top: 80px;
+    font-size: 22px;
+    margin-left: 300px;
+    margin-right: 300px; 
+    color: black; 
+    text-align: center;
+}
+p#txt-tour-8{
+    margin-top: 100px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 40px; 
+    color: black; 
+}
+p#txt-tour-9{
+    margin-top: 100px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 60px; 
+    color: white; 
+}
+p#txt-tour-10{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+p#txt-tour-11{
+    margin-top: 110px;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 100px; 
+    color: black; 
+}
+p#txt-tour-12{
+    margin-top: 60px;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 50px; 
+    color: black;
+    text-align: left
+}
+p#txt_tour_12{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+img#tour-member{
+    margin-top: 60px;margin-left: 60px
+}
+img#tour-comment{
+    margin-top: 110px;margin-left: 130px
+}
+img#tour-notify{
+    margin-top: 30px;margin-left: 150px
+}
+img#tour-checklists{
+    margin-top: 90px;
+}
+img#tour-search{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+img#img-tour{
+margin-top: 60px; margin-left:160px;margin-bottom: 40px;}
+img#img-tour-gold{margin-bottom: 40px; max-width: 100%; max-height: 100%;
+height: 50%;width: 50%;}
+img#img-tour-business{
+    margin-top: 120px;
+    margin-bottom: 30px;
+    max-height: 100%;
+    max-width: 100%;
+    width: 70%;
+    height: 70%;
+    margin-left: 30px;
+}
+img#img-tour-taco{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-height: 100%;
+    max-width: 100%;
+    width: 35%;
+    height: 35%;
+    margin-left: 230px;
+}
+.class-tour{
+    height: 45px;
+    width: 360px;
+    margin-left: 20px;
+    background-color: #F3F1F1;
+    font-size: 22px;
+    text-align: center;
+}
+img#img-app{
+    height: 54px;max-height: 100%; max-width: 100%
+}
+.btn-view-application{
+    text-align: center;
+    background-color: #DDEBFB;
+    height: 45px;
+    font-size: 20px;
+}
+.btn-admin{
+	text-align: left;
+	background-color: white;
+	border: white;
+	font-size: 12px;
+}
+.btn-admin:hover{
+	background-color: #D6DADC;
+}

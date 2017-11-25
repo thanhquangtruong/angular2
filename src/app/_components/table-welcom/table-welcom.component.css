@@ -1,0 +1,197 @@
+.private{
+    background-color: rgb(75, 191, 107);
+    margin-top: -17px;
+    margin-left: -120px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn-table-welcom{
+    background-color: rgb(75, 191, 107);
+    margin-top: -15px;
+    margin-left: -100px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn-access{
+    background-color: rgb(75, 191, 107);
+    margin-top: -15px;
+    margin-left: -170px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+.big-card {
+    border-radius: 3px;
+    display: block;
+    padding: 4px;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-top: -5px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.big-card:hover{
+    background-color: #D6DADC;
+}
+.create-team{
+    font-size: 14px;
+}
+.sub-access {
+    border-radius: 3px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+}
+.sub-access {
+    color: #444;
+}
+
+.sub-access:hover {
+    background-color: #D6DADC;
+}
+.show-menu{
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    margin-top: -5px;
+    background-color: rgb(75, 191, 107);
+    color: white;
+}
+.show-menu:hover{
+    background-color: rgba(0,0,0,.12);
+}
+.show-menu-card{
+    margin-top: 10px;width: 500px;float: right; margin-right: -70px;
+    background-color: #EDEFF0;
+}
+p#menu{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.avatar-table-user {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    background: #D6DADC;
+    text-align: center;
+    padding: 10px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin-left:10px;
+}
+.btn-adduser{
+    height: 35px;
+    width: 450px;
+    text-align: left;
+    margin-left: 20px;
+}
+hr#a{
+    margin-top: -5px;
+}
+.btn-menu-item{
+    height: 35px;
+    width: 450px;
+    background-color: #EDEFF0;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+    border: #EDEFF0
+}
+.list-job-table{
+    border-style: solid;
+    border: 1px solid #E2E4E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 270px;
+    height: auto;
+    margin-right:10px;
+    margin-left: 30px;
+    background-color: #E2E4E6;
+    margin-bottom: 20px;
+}
+p#job-title{
+    text-align: left;font-size: 14px;font-weight: bold; margin-left: 10px;
+}
+.job-option{
+    background-color: white; margin-left: 5px; margin-right: 5px;
+}
+.job-item{
+    background-color: white; margin-left: 5px; margin-right: 5px;
+    margin-top: 5px;
+}
+img#img-job-title{
+    width: 95%;
+    margin-left:2px;
+    margin-bottom: 8px;
+    height: 100%;
+}
+button#btn-modal{
+    text-align: left;
+    background-color: white;
+    border: 1px solid white;
+}
+img#image-modal{
+    height: 30%;
+    width: 30%;
+    margin-left: 300px;
+    text-align: center;
+}
+p#title-modal-1{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+p#tiltle-modal-2{
+    color: black;
+    margin-left: 40px;
+}
+img#url-daidien{
+    height: 100%;
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+p#name-img{
+    text-align: left ;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+}
+p#time-upload{
+    margin-left: 10px;
+}p#tiltle-modal-3{
+     margin-left: 30px;
+     font-weight: bold;
+     font-size: 17px;
+ }
+.btn-modal{
+    width: 200px;
+    height: 35px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+abel#txt-welcom{
+    font-size: 12px;
+    font-weight: bold;}
+a#txt-welcom{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;}
+label#txt-welcom:hover{
+    background-color: blue;
+}

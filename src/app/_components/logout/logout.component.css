@@ -1,0 +1,41 @@
+.log-out-1{
+    height: 200px;
+    color: black;
+    text-align: center;
+}
+p#logout-1{
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+p#logout-2{
+    font-size: 20px;
+}
+p#logout-3{
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    font-size: 18px;
+}
+.btn-download-app{
+    height: 45px;
+    width: 200px;
+    background-color: white;
+    font-size: 22px;
+    text-align: center;
+}
+p#txt-logout-1{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+}
+p#logout-4{
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
