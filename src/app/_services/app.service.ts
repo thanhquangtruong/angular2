@@ -1,12 +1,10 @@
 import {Injectable} from '@angular/core';
-import {Cookie} from 'ng2-cookies';
-import {Headers, Http, RequestOptions, Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
-import {SERVER_ADDRESS} from '../clientDetail';
-import {HttpRequest} from '@angular/common/http';
+import {HttpClient, HttpHeaders, HttpRequest} from '@angular/common/http';
 import {AuthService} from './auth.service';
+import {SERVER_ADDRESS} from '../clientDetail';
 
 
 @Injectable()
@@ -14,56 +12,40 @@ export class AppService {
 
     cachedRequests: Array<HttpRequest<any>> = [];
 
-    constructor(private _auth: AuthService,
-                private _http: Http) {
+    constructor(private _http: HttpClient,
+                private _auth: AuthService) {
     }
 
-    getResource(apiEndPoint): Observable<any> {
-        console.log('GET: ' + SERVER_ADDRESS + apiEndPoint);
-        const headers = new Headers({
-            'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-            'Authorization': 'Bearer ' + Cookie.get('access_token')
-        });
-        const options = new RequestOptions({headers: headers});
-        return this._http.get(SERVER_ADDRESS + apiEndPoint, options)
-            .map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+    get(apiEndPoint): Observable<any> {
+        let headers = new HttpHeaders();
+        headers = headers.append('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+        headers = headers.append('Authorization', 'Bearer ' + this._auth.getToken());
+        const options = ({headers: headers});
+        return this._http.get(SERVER_ADDRESS + apiEndPoint, options);
     }
 
-    postResource(apiEndPoint, bodyData): Observable<any> {
-        console.log('POST: ' + SERVER_ADDRESS + apiEndPoint);
-        const headers = new Headers({
-            'Content-type': 'application/json',
-            'Authorization': 'Bearer ' + this._auth.getToken()
-        });
-        const options = new RequestOptions({headers: headers});
-        return this._http.post(SERVER_ADDRESS + apiEndPoint, bodyData, options)
-            .map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+    post(apiEndPoint, bodyData): Observable<any> {
+        let headers = new HttpHeaders();
+        headers = headers.append('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+        headers = headers.append('Authorization', 'Bearer ' + this._auth.getToken());
+        const options = ({headers: headers});
+        return this._http.post(SERVER_ADDRESS + apiEndPoint, bodyData, options);
     }
 
-    putResource(apiEndPoint, bodyData): Observable<any> {
-        console.log('PUT: ' + SERVER_ADDRESS + apiEndPoint);
-        const headers = new Headers({
-            'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-            'Authorization': 'Bearer ' + this._auth.getToken()
-        });
-        const options = new RequestOptions({headers: headers});
-        return this._http.put(SERVER_ADDRESS + apiEndPoint, bodyData, options)
-            .map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+    put(apiEndPoint, bodyData): Observable<any> {
+        let headers = new HttpHeaders();
+        headers = headers.append('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+        headers = headers.append('Authorization', 'Bearer ' + this._auth.getToken());
+        const options = ({headers: headers});
+        return this._http.put(SERVER_ADDRESS + apiEndPoint, bodyData, options);
     }
 
-    deleteResource(apiEndPoint): Observable<any> {
-        console.log('DELETE: ' + SERVER_ADDRESS + apiEndPoint);
-        const headers = new Headers({
-            'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-            'Authorization': 'Bearer ' + this._auth.getToken()
-        });
-        const options = new RequestOptions({headers: headers});
-        return this._http.delete(SERVER_ADDRESS + apiEndPoint, options)
-            .map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+    delete(apiEndPoint): Observable<any> {
+        let headers = new HttpHeaders();
+        headers = headers.append('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+        headers = headers.append('Authorization', 'Bearer ' + this._auth.getToken());
+        const options = ({headers: headers});
+        return this._http.delete(SERVER_ADDRESS + apiEndPoint, options);
     }
 
     public collectFailedRequest(request): void {

@@ -1,146 +1,149 @@
 import {Injectable} from '@angular/core';
-import {Router} from '@angular/router';
-import {Cookie} from 'ng2-cookies';
-import {Headers, Http, RequestOptions, Response} from '@angular/http';
-import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import {isNullOrUndefined} from 'util';
 import {CLIENT_ID, CLIENT_SECRET, SERVER_ADDRESS} from '../clientDetail';
 import {User} from '../_models/user';
+import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class AuthService {
 
-    constructor(private _router: Router, private _http: Http) {
-    }
+    userProfile: User;
+    loggedIn: boolean;
+    loggedIn$ = new BehaviorSubject<boolean>(this.loggedIn);
 
-    private obtainAccessToken(username, password, isRememberChecked, onSuccessCallback, onErrorCallback) {
-        let params = new URLSearchParams();
-        params.append('username', username);
-        params.append('password', password);
-        params.append('grant_type', 'password');
-        let headers = new Headers({
-            'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-            'Authorization': 'Basic ' + btoa(CLIENT_ID + ':' + CLIENT_SECRET)
-        });
-        let options = new RequestOptions({headers: headers});
-        console.log(params.toString());
-        this._http.post(SERVER_ADDRESS + '/oauth/token', params.toString(), options)
-            .map(res => res.json())
-            .subscribe(
-                data => {
-                    this.saveToken(data, isRememberChecked);
-                    onSuccessCallback();
-                },
-                err => {
-                    alert('Invalid Credentials');
-                    onErrorCallback(err);
-                }
-            );
-    }
-
-    private obtainAccessTokenByRefreshToken(refresh_token): Observable<Response> {
-        console.log('Getting new access_token via refresh_token: ' + refresh_token);
-        let params = new URLSearchParams();
-        params.append('grant_type', 'refresh_token');
-        params.append('refresh_token', this.getRefreshToken());
-        let headers = new Headers({
-            'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-            'Authorization': 'Basic ' + btoa('my-client-id:secret')
-        });
-        let options = new RequestOptions({headers: headers});
-        console.log(params.toString());
-        return this._http.post(SERVER_ADDRESS + '/oauth/token', params.toString(), options);
-    }
-
-    private refreshAccessToken(refreshToken: string) {
-        this.obtainAccessTokenByRefreshToken(refreshToken)
-            .map(res => res.json())
-            .subscribe(
-                data => this.saveToken(data, true),
-                err => alert('Invalid Credentials')
-            );
-    }
-
-    private saveToken(tokens, withRefreshToken) {
-        Cookie.set('access_token', tokens.access_token, tokens.expires_in);
-        if (withRefreshToken) {
-            Cookie.set('refresh_token', tokens.refresh_token, 60 * 60 * 24 * 30);
-        }   // TODO: kiem tra lai
-        console.log('Obtained Access token');
-        this._router.navigate(['/']);
-    }
-
-    private deleteAllTokens() {
-        Cookie.delete('access_token');
-        Cookie.delete('refresh_token');
-    }
-
-    private getRefreshToken(): string {
-        return Cookie.get('refresh_token');
-    }
-
-    private isTokenNullOrExpired(): boolean {
-        const token = Cookie.get('refresh_token');
-        return (isNullOrUndefined(token) || token === '');
-    }
-
-    private isRefreshTokenNullOrExpired(): boolean {
-        const token = this.getRefreshToken();
-        return (isNullOrUndefined(token) || token === '');
-    }
-
-    getToken(): string {
-        const token = Cookie.get('refresh_token');
-        if (isNullOrUndefined(token) || token === '') {
-            if (!this.isRefreshTokenNullOrExpired()) {
-                this.obtainAccessTokenByRefreshToken(this.getRefreshToken())
-                    .map(res => res.json())
-                    .subscribe(
-                        data => {
-                            this.saveToken(data, true);
-                            console.log('new token has been obtained');
-                            return Cookie.get('access_token');
-                        },
-                        err => console.log(err)
-                    );
-            }
-        }
-        return null;
-    }
-
-    isAuthenticated(): boolean {
-        console.log('Checking authorization status:');
-        console.log('- access_token: ' + this.getToken());
-        console.log('- refresh_token: ' + this.getRefreshToken());
-        if (this.isTokenNullOrExpired()) {
-            if (this.isRefreshTokenNullOrExpired()) {
-                return false;
-            } else {
-                this.refreshAccessToken(this.getRefreshToken());
-                return this.isAuthenticated();
-            }
-        } else {
-            return true;
+    constructor(private _http: HttpClient) {
+        // If authenticated, set local profile property and update login status subject
+        if (this.isAuthenticated) {
+            this.userProfile = JSON.parse(localStorage.getItem('profile'));
+            this._setLoggedIn(true);
         }
     }
 
-    register(user: User): Observable<Response> {
-
-        const headers = new Headers({
-            'Content-type': 'application/json',
-            'Authorization': 'Basic ' + btoa(CLIENT_ID + ':' + CLIENT_SECRET)
-        });
-        const options = new RequestOptions({headers: headers});
-        return this._http.post(SERVER_ADDRESS + '/api/users', user, options);
-    }
-
-    login(username, password, isRememberChecked, onSuccessCallBack, onErrorCallback) {
-        this.obtainAccessToken(username, password, isRememberChecked, onSuccessCallBack, onErrorCallback);
+    login(username, password, remember, onSuccess, onError) {
+        // Auth0 _authorize request
+        this._authorize(username, password).subscribe(
+            data => {
+                this._getProfile(data, remember);
+                onSuccess(data);
+            },
+            err => {
+                onError(err);
+            }
+        );
     }
 
     logout() {
-        this.deleteAllTokens();
+        // Remove tokens and profile and update login status subject
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('refresh_token');
+        localStorage.removeItem('profile');
+        localStorage.removeItem('expires_at');
+
+        sessionStorage.clear();
+
+        this.userProfile = undefined;
+        this._setLoggedIn(false);
+    }
+
+    getToken(): string {
+        const session = sessionStorage.getItem('access_token');
+        if (!isNullOrUndefined(session)) {
+            return session;
+        } else {
+            if (Date.now() < JSON.parse(localStorage.getItem('expires_at'))) {
+                return localStorage.getItem('access_token');
+            }
+            this.logout();
+            return null;
+        }
+    }
+
+    isAuthenticated(): boolean {
+        // console.log('auth service > get token');
+        // console.log(this.getToken());
+        return !isNullOrUndefined(this.getToken());
+    }
+
+    register(user: User) {
+        let headers = new HttpHeaders();
+        headers = headers.append('Content-type', 'application/json');
+        headers = headers.append('Authorization', 'Basic ' + btoa(CLIENT_ID + ':' + CLIENT_SECRET));
+        const options = ({headers: headers});
+        return this._http.post(SERVER_ADDRESS + '/api/users', user, options);
+    }
+
+    private _setLoggedIn(value: boolean) {
+        // Update login status subject
+        this.loggedIn$.next(value);
+        this.loggedIn = value;
+    }
+
+    // _refreshToken(refreshToken, success, error) {
+    //     const params = new HttpParams();
+    //     params.append('grant_type', 'refresh_token');
+    //     params.append('refresh_token', refreshToken);
+    //     const headers = new HttpHeaders();
+    //     headers.set('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+    //     headers.set('Authorization', 'Basic ' + btoa(CLIENT_ID + ':' + CLIENT_SECRET));
+    //     this._http.post(SERVER_ADDRESS + '/oauth/token', null, {headers: headers, params: params})
+    //         .subscribe(
+    //             data => {
+    //                 success(data);
+    //             },
+    //             err => {
+    //                 error(err);
+    //             }
+    //         )
+    // }
+
+    private _authorize(username: string, password: string) {
+        let params = new HttpParams();
+        params = params.append('username', username);
+        params = params.append('password', password);
+        params = params.append('grant_type', 'password');
+        let headers = new HttpHeaders();
+        headers = headers.append('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+        headers = headers.append('Authorization', 'Basic ' + btoa(CLIENT_ID + ':' + CLIENT_SECRET));
+        return this._http.post(SERVER_ADDRESS + '/oauth/token', null, {headers: headers, params: params});
+    }
+
+    private _getProfile(authResult, remember) {
+        let headers = new HttpHeaders();
+        headers = headers.append('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+        headers = headers.append('Authorization', 'Bearer ' + authResult.access_token);
+        this._http.get(SERVER_ADDRESS + '/api/users', {headers: headers}).subscribe(
+            userData => {
+                this._setSession(authResult, userData, remember);
+            },
+            err => {
+                // console.log('auth service -> get profile ERR' + err);
+            }
+        );
+    }
+
+    private _setSession(authResult, profile, remember) {
+        // Save session data and update login status subject
+
+        // TODO: fix localStorage or use Cookie
+        // if (remember) { => @warning: not working
+        //     localStorage.setItem('access_token', authResult.access_token);
+        //     localStorage.setItem('profile', JSON.stringify(profile));
+        //     const expTime = authResult.expiresIn * 1000 + Date.now();
+        //     localStorage.setItem('expires_at', JSON.stringify(expTime));
+        //     // localStorage.setItem('refresh_token', authResult.refresh_token);
+        //     // localStorage.setItem('refresh_expires', JSON.stringify((60 * 60 * 24 * 30) * 1000 + Date.now()));
+        // } else {
+        //     sessionStorage.setItem('access_token', authResult.access_token);
+        //     sessionStorage.setItem('profile', JSON.stringify(profile));
+        // }
+
+        sessionStorage.setItem('access_token', authResult.access_token);
+        sessionStorage.setItem('profile', JSON.stringify(profile));
+
+        this.userProfile = profile;
+        this._setLoggedIn(true);
     }
 }

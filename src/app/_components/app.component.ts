@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {User} from '../_models/user';
 import {UserService} from '../_services/user.service';
-import {NavigationEnd, Router} from '@angular/router';
+import {Router} from '@angular/router';
 import 'rxjs/add/operator/filter';
 import {AuthService} from '../_services/auth.service';
 
@@ -22,30 +22,32 @@ export class AppComponent implements OnInit {
 
     constructor(private _router: Router,
                 private _auth: AuthService,
-                private _userService: UserService) {
-        _router.events.filter(event => event instanceof NavigationEnd)
-            .subscribe((event: NavigationEnd) => {
-                this.reCheckAuthorizationStatus();
-            });
+                private _userService: UserService,) {
     }
 
     ngOnInit(): void {
-        this.reCheckAuthorizationStatus();
+        this.isAuthenticated = false;
+        this.currentUser = null;
+        this._auth.loggedIn$.subscribe(
+            loggedIn => {
+                this.changeAuthorizationStatus(loggedIn);
+                console.log('AppComponent > loggedIn$ changed ' + loggedIn);
+            }
+        );
     }
 
-    reCheckAuthorizationStatus() {
-        this.isAuthenticated = this._auth.isAuthenticated();
-        if(this.isAuthenticated)
+    changeAuthorizationStatus(loggedIn: boolean) {
+        this.isAuthenticated = loggedIn;
+        if (loggedIn) {
             this._userService.getCurrentUser().subscribe(user => this.currentUser = user);
+        } else {
+            this.currentUser = null;
+        }
     }
 
     logout() {
         this._auth.logout();
-        console.log('current route: ' + this._router.url);
-        if (this._router.url === '/')
-            this.reCheckAuthorizationStatus();
-        else
-            this._router.navigate(['']);
+        this._router.navigate(['']);
     }
 
 }

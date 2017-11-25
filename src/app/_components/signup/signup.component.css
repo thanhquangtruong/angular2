@@ -136,3 +136,12 @@ p#logout-4{
     color: white;
     text-align: center;
 }
+
+.error-message {
+    font-size: 1.2em;
+    color: white;
+    background-color: red;
+    width: 100%;
+    display: block;
+    margin-bottom: 1.5em;
+}
