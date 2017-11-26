@@ -26,7 +26,7 @@ export class AppService {
 
     post(apiEndPoint, bodyData): Observable<any> {
         let headers = new HttpHeaders();
-        headers = headers.append('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+        headers = headers.append('Content-type', 'application/json');
         headers = headers.append('Authorization', 'Bearer ' + this._auth.getToken());
         const options = ({headers: headers});
         return this._http.post(SERVER_ADDRESS + apiEndPoint, bodyData, options);

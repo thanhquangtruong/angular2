@@ -30,6 +30,7 @@ import {PlatformComponent} from './_components/platform/platform.component';
 import {PrivarePolicyComponent} from './_components/privare-policy/privare-policy.component';
 import {AboutUsComponent} from './_components/about-us/about-us.component';
 import {ProjectService} from './_services/project.service';
+import {ProjectComponent} from './_components/project/project.component';
 
 @NgModule({
     declarations: [
@@ -54,7 +55,8 @@ import {ProjectService} from './_services/project.service';
         TableWelcomComponent,
         PlatformComponent,
         PrivarePolicyComponent,
-        AboutUsComponent
+        AboutUsComponent,
+        ProjectComponent
     ],
     imports: [
         BrowserModule,
@@ -81,7 +83,8 @@ import {ProjectService} from './_services/project.service';
             {path: 'table-welcom', component: TableWelcomComponent},
             {path: 'platform', component: PlatformComponent},
             {path: 'private-policy', component: PrivarePolicyComponent},
-            {path: 'about-us', component: AboutUsComponent}
+            {path: 'about-us', component: AboutUsComponent},
+            {path: 'project/:id', component: ProjectComponent},
         ])
     ],
     providers: [

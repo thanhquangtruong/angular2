@@ -16,7 +16,7 @@
 }
 p#user-name{
     text-align: center;
-    font-size: 11;
+    font-size: 11px;
     margin-top: 8px;
 }
 .header_user_table{
@@ -1342,4 +1342,9 @@ img#img-app{
 }
 .btn-admin:hover{
     background-color: #D6DADC;
+}
+
+.card {
+    background: white;
+    border: 1px solid lightgrey;
 }
